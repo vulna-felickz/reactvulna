@@ -3,8 +3,8 @@
  * @description External links that open in a new tab or window but do not specify
  *              link type 'noopener' or 'noreferrer' are a potential security risk.
  * @kind problem
- * @problem.severity warning
- * @security-severity 6.5
+ * @problem.severity info
+ * @security-severity 3.0
  * @id js/unsafe-external-link
  * @tags maintainability
  *       security
