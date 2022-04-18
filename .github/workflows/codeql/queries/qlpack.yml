@@ -3,9 +3,9 @@ version: 0.1.0-dev
 groups: 
   - javascript
   - queries
-#suites: codeql-suites
+suites: codeql-suites
 extractor: javascript
-#defaultSuiteFile: codeql-suites/javascript-code-scanning.qls
+defaultSuiteFile: codeql-suites/javascript-code-scanning.qls
 dependencies:
   codeql/javascript-all: "*"
   codeql/suite-helpers: "*"
