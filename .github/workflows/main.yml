@@ -13,6 +13,10 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v2.4.0
       - run: echo "This repo is ${{ github.repository }} .."
+      - name: Run a script file from repo
+        run: |
+          Get-ChildItem -Recurse "C:\Android\android-sdk" | Measure-Object -Sum Length
+        shell: pwsh      
       - name: Clean up docker cache on windows
         run: |
           docker system prune -af      
