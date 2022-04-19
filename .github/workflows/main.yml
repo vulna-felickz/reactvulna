@@ -15,12 +15,12 @@ jobs:
       - run: echo "This repo is ${{ github.repository }} .."
       - name: Find top 20 largest folders
         run: |
-          gci ~ -r | sort-object Length -Descending | Select fullname,Length -f 20
+          gci "C:\" -r | sort-object Length -Descending | Select Length,fullname -f 20
         shell: pwsh      
-      - name: Clean up docker cache on windows
-        run: |
-          docker system prune -af      
-        shell: bash
+#      - name: Clean up docker cache on windows
+#        run: |
+#         docker system prune -af      
+#        shell: bash
       - name: Run a inline script
         run: |
           mkdir newfolder
