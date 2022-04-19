@@ -13,9 +13,9 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v2.4.0
       - run: echo "This repo is ${{ github.repository }} .."
-      - name: Run a script file from repo
+      - name: Find top 20 largest folders
         run: |
-          Get-ChildItem -Recurse "C:\Android\android-sdk" | Measure-Object -Sum Length
+          gci ~ -r | sort-object Length -Descending | Select fullname,Length -f 20
         shell: pwsh      
       - name: Clean up docker cache on windows
         run: |
