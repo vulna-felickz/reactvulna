@@ -13,6 +13,10 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v2.4.0
       - run: echo "This repo is ${{ github.repository }} .."
+      - name: Clean up docker cache on windows
+        run: |
+          docker system prune -af      
+        shell: bash
       - name: Run a inline script
         run: |
           mkdir newfolder
