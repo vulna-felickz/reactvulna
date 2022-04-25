@@ -13,10 +13,10 @@ jobs:
       - name: Check out source code
         uses: actions/checkout@v2.4.0
       - run: echo "This repo is ${{ github.repository }} .."
-      - name: Find top 20 largest folders
-        run: |
-          gci "C:\" -r -Exclude "*Windows Defender*" | sort-object Length -Descending | Select Length,fullname -f 20
-        shell: pwsh      
+#      - name: Find top 20 largest folders
+#        run: |
+#          #gci "C:\" -r -Exclude "*Windows Defender*" | sort-object Length -Descending | Select Length,fullname -f 20
+#        shell: pwsh      
 #      - name: Clean up docker cache on windows
 #        run: |
 #         docker system prune -af      
