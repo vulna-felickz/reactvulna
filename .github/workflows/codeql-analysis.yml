@@ -50,6 +50,7 @@ jobs:
         debug: true
         languages: ${{ matrix.language }}
         # If you wish to specify custom queries, you can do so here or in a config file.
+        config-file: ./.github/codeql/codeql-config.yml
         # By default, queries listed here will override any specified in a config file.
         # Prefix the list here with "+" to use these queries and those in the config file.
         # queries: ./path/to/local/query, your-org/your-repo/queries@main
@@ -74,13 +75,14 @@ jobs:
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
       
-    - name: GitHub Advanced Security API to CSV
-      uses: some-natalie/ghas-to-csv@v0.2.0
+    #- name: GitHub Advanced Security API to CSV
+    #  uses: some-natalie/ghas-to-csv@v0.2.0
       
-    - name: Upload CSV
-      uses: actions/upload-artifact@v3
-      with:
-          name: ghas-data
-          path: ${{ github.workspace }}/*.csv
-          if-no-files-found: error
+    #- name: Upload CSV
+    #  uses: actions/upload-artifact@v3
+    #  with:
+    #      name: ghas-data
+    #      path: ${{ github.workspace }}/*.csv
+    #      if-no-files-found: error
+
 
