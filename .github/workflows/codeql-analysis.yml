@@ -86,14 +86,14 @@ jobs:
     #      if-no-files-found: error
 
     #Testing out the debug action!
-    - name: Debug Analysis
-      uses: zbazztian/codeql-debug@master
-      with:
-        language: ${{ matrix.language }}
+    #- name: Debug Analysis
+    #  uses: zbazztian/codeql-debug@master
+    #  with:
+    #    language: ${{ matrix.language }}
 
-    - name: Upload loc as a Build Artifact
-      uses: actions/upload-artifact@v2.2.0
-      with:
-        name: codeql-debug-results
-        path: codeql-debug-results
-        retention-days: 30
+    #- name: Upload loc as a Build Artifact
+    #  uses: actions/upload-artifact@v2.2.0
+    #  with:
+    #    name: codeql-debug-results
+    #    path: codeql-debug-results
+    #    retention-days: 30
