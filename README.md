@@ -1,3 +1,8 @@
+# Advanced Security Testing
+1. [custom config file](https://gist.github.com/bthomas2622/e520926b88ebb93e79b30f7f32ed4849)
+2. [custom query severity overload](https://github.com/vulna-felickz/reactvulna/blob/master/.github/workflows/codeql/queries/TargetBlank.ql#L7)
+3. [exclude default query using custom query suite](https://github.com/vulna-felickz/reactvulna/blob/master/.github/codeql/javascript-custom-queries.qls#L4)
+
 # Reactvulna
 
 ## Table of Contents
