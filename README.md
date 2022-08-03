@@ -1,7 +1,12 @@
 # Advanced Security Testing
+
+## Override Severity of Alert via CodeQL Config
 1. [custom config file](https://gist.github.com/bthomas2622/e520926b88ebb93e79b30f7f32ed4849)
 2. [custom query severity overload](https://github.com/vulna-felickz/reactvulna/blob/master/.github/workflows/codeql/queries/TargetBlank.ql#L7)
 3. [exclude default query using custom query suite](https://github.com/vulna-felickz/reactvulna/blob/master/.github/codeql/javascript-custom-queries.qls#L4)
+
+## Alternative: Use action to rewrite the severity
+- https://github.com/zbazztian/adjust-cvss
 
 # Reactvulna
 
