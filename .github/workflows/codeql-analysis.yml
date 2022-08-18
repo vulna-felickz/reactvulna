@@ -74,6 +74,11 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
+      with: 
+        #2022-06-01T14:13:08.3155977Z   CODEQL_RAM: 5922
+        #2022-06-01T14:13:08.3156168Z   CODEQL_THREADS: 2
+        ram: 5000
+        threads: 2
       
     #- name: GitHub Advanced Security API to CSV
     #  uses: some-natalie/ghas-to-csv@v0.2.0
