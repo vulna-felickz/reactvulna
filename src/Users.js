@@ -82,6 +82,10 @@ class Users extends Component {
               <td><h3>{user.emailAddress}</h3></td>
             </tr>
             <tr>
+              <td><h3><span class="label label-default">Web-page</span></h3></td>
+              <td><h3><a href={user.webPageUrl} target="_blank">Go to {user.name}s web page2</a></h3></td>
+            </tr>
+            <tr>
               <td><h3><span class="label label-default">Motto</span></h3></td>
               <td><h3>{user.motto}</h3></td>
             </tr>
