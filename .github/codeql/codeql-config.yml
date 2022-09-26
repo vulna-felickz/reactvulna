@@ -3,3 +3,5 @@ disable-default-queries: true
 queries:
   - name: Use the custom query suite file from this repo
     uses: ./.github/codeql/javascript-custom-queries.qls
+paths-ignore:
+  - src
